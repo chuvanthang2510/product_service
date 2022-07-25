@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "f4d42540-3e65-4a60-8ab6-a1a405252053",
+		"name": "Clothes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "ÁO POLO SỢI MODAL CAO CẤP ",
+							"type": "text"
+						},
+						{
+							"key": "shortDescription",
+							"value": "Được ra đời vào những năm 60, là chiếc áo được dùng trong thể thao “hockey trên lưng ngựa” hay còn gọi là Polo",
+							"type": "text"
+						},
+						{
+							"key": "longDescription",
+							"value": "Chất liệu vải sợi modal là vật liệu vải sinh học được làm từ cellulose tái chế từ cây sồi. Với chiết xuất hoàn toàn tự nhiên, có sự thuần khiết, bền bỉ và đặc biệt thân thiện với sức khỏe của người dùng, dễ dàng phân hủy trong môi trường tự nhiên. Kết cấu sợi vải chắc chắn, thoáng khí, ít vón cục sau khi bị ma sát. Sợi bóng, bề mặt mịn, mát hơn so với các chất liệu tương tự... Bền màu sau nhiều lần giặt và thời gian sử dụng lâu dài.",
+							"type": "text"
+						},
+						{
+							"key": "sizeIds",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "colorIds",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "categoryId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "brandId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "importPrice",
+							"value": "30000",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "45000",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "uploadAvatar",
+							"type": "file",
+							"src": "/C:/Users/nguye/Desktop/polo.jpg"
+						},
+						{
+							"key": "uploadImages",
+							"type": "file",
+							"src": "/C:/Users/nguye/Desktop/polo.jpg"
+						},
+						{
+							"key": "uploadImages",
+							"type": "file",
+							"src": "/C:/Users/nguye/Desktop/ChiHuy/Images/NguyenVanHa.jpeg"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update product",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "ÁO POLO SỢI MODAL CAO CẤP 2",
+							"type": "text"
+						},
+						{
+							"key": "shortDescription",
+							"value": "Được ra đời vào những năm 60, là chiếc áo được dùng trong thể thao “hockey trên lưng ngựa” hay còn gọi là Polo",
+							"type": "text"
+						},
+						{
+							"key": "longDescription",
+							"value": "Chất liệu vải sợi modal là vật liệu vải sinh học được làm từ cellulose tái chế từ cây sồi. Với chiết xuất hoàn toàn tự nhiên, có sự thuần khiết, bền bỉ và đặc biệt thân thiện với sức khỏe của người dùng, dễ dàng phân hủy trong môi trường tự nhiên. Kết cấu sợi vải chắc chắn, thoáng khí, ít vón cục sau khi bị ma sát. Sợi bóng, bề mặt mịn, mát hơn so với các chất liệu tương tự... Bền màu sau nhiều lần giặt và thời gian sử dụng lâu dài.",
+							"type": "text"
+						},
+						{
+							"key": "sizeIds",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "colorIds",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "categoryId",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "brandId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "importPrice",
+							"value": "30000",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "45000",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filter product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/product?page=1&size=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"product"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
